@@ -10,7 +10,7 @@ The work was supervised by Prof. [Dr. Ahmed Wasif Reza](https://fse.ewubd.edu/co
 | Shah Newaz Parvez Shuvo            | Khulna University of Engineering and Technology        |
 | Sumit Kumar Rahut         | East West University           |
 | Mehedi Hasan Rabbi         | Southeast University  |
-| MD. Rafiul Azam`           | Khulna University of Engineering and Technology |
+| MD. Rafiul Azam           | Khulna University of Engineering and Technology |
 | Jannatul Naeem Tilotama| East West University       |
 | Khalid Saifullah Fuad         | Southeast University                           |
 | Md. Golam Rabbanie Babu   | Southeast University          |
