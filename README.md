@@ -17,7 +17,7 @@ The work was supervised by Prof. [Dr. Ahmed Wasif Reza](https://fse.ewubd.edu/co
 | Md. Mahadi Hasan           | University of South Asia     |
 
 ## **Dataset**
-(Will Be Updated)
+The dataset used for this project can be accessed from [Kaggle](https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset).
 ## **Working Procedure**
 (Will Be Updated)
 ## **Results**
