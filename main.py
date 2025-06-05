@@ -12,8 +12,8 @@ from src.data.preprocessing import (
 
 def main():
     raw_path = 'data/raw/retail_store_inventory.csv'
-    processed_dir = 'data/processed'
-    model_dir = 'models'
+    processed_dir = 'data/preprocessed'
+    model_dir = 'reports/models'
 
     # Create directories if they don't exist
     os.makedirs(processed_dir, exist_ok=True)
