@@ -1,52 +1,46 @@
 import os
 import pandas as pd
-import joblib
+from sklearn.model_selection import train_test_split
 
-from src.data.preprocessing import (
-    load_data,
-    clean_and_engineer_features,
-    split_features_and_target,
-    scale_features,
-    apply_pca
-)
+from src.data.preprocessing import load_data, clean_and_engineer_features, split_features_and_target, scale_features, apply_pca
+from src.models.train_models import train_models
+from src.evaluation.metrics import evaluate_model
+from src.evaluation.plot_curves import plot_learning_curve
+from src.explainability.lime_explainer import explain_with_lime
 
-def main():
-    raw_path = 'data/raw/retail_store_inventory.csv'
-    processed_dir = 'data/preprocessed'
-    model_dir = 'reports/models'
+# Paths
+data_path = 'data/raw/retail_store_inventory.csv'
+processed_path = 'data/preprocessed'
+metrics_path = 'reports/figures/metrics'
+plots_path = 'reports/figures/plots'
+lime_path = 'reports/figures/lime'
 
-    # Create directories if they don't exist
-    os.makedirs(processed_dir, exist_ok=True)
-    os.makedirs(model_dir, exist_ok=True)
+# Ensure directories exist
+os.makedirs(processed_path, exist_ok=True)
+os.makedirs(metrics_path, exist_ok=True)
+os.makedirs(plots_path, exist_ok=True)
+os.makedirs(lime_path, exist_ok=True)
 
-    # Load and preprocess
-    dataset = load_data(raw_path)
-    dataset = clean_and_engineer_features(dataset)
+# Preprocessing
+dataset = load_data(data_path)
+dataset = clean_and_engineer_features(dataset)
+X, y = split_features_and_target(dataset)
+X_scaled, scaler = scale_features(X)
+X_pca, pca = apply_pca(X_scaled)
 
-    # Split
-    X, y = split_features_and_target(dataset)
+# Save processed data
+pd.DataFrame(X_scaled, columns=X.columns).to_csv(f'{processed_path}/X_scaled.csv', index=False)
+pd.DataFrame(y, columns=['Demand']).to_csv(f'{processed_path}/y.csv', index=False)
+pd.DataFrame(X_pca).to_csv(f'{processed_path}/X_pca.csv', index=False)
 
-    # Scale
-    X_scaled, scaler = scale_features(X)
+# Train/test split
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
-    # PCA
-    X_pca, pca = apply_pca(X_scaled)
+# Train models
+models = train_models(X_train, y_train)
 
-    # Save preprocessed datasets
-    pd.DataFrame(X_scaled, columns=X.columns).to_csv(f'{processed_dir}/X_scaled.csv', index=False)
-    pd.DataFrame(y, columns=['Demand']).to_csv(f'{processed_dir}/y.csv', index=False)
-    pd.DataFrame(X_pca).to_csv(f'{processed_dir}/X_pca.csv', index=False)
-
-    # Save scaler and PCA model
-    joblib.dump(scaler, f'{model_dir}/scaler.pkl')
-    joblib.dump(pca, f'{model_dir}/pca.pkl')
-
-    print(f"[INFO] Scaled features saved to: {processed_dir}/X_scaled.csv")
-    print(f"[INFO] Target saved to: {processed_dir}/y.csv")
-    print(f"[INFO] PCA features saved to: {processed_dir}/X_pca.csv")
-    print(f"[INFO] Scaler saved to: {model_dir}/scaler.pkl")
-    print(f"[INFO] PCA model saved to: {model_dir}/pca.pkl")
-    print(f"[INFO] Original features: {X.shape[1]} → PCA components: {X_pca.shape[1]}")
-
-if __name__ == "__main__":
-    main()
+# Evaluate + Visualize
+for name, model in models.items():
+    evaluate_model(name, model, X_train, y_train, X_test, y_test, metrics_path)
+    plot_learning_curve(model, X_train, y_train, name, plots_path)
+    explain_with_lime(model, X_train, X_test, X.columns.tolist(), name, lime_path)
