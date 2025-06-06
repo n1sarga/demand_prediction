@@ -3,7 +3,7 @@ from sklearn.svm import SVR
 from sklearn.neural_network import MLPRegressor
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import GradientBoostingRegressor, RandomForestRegressor
-from xgboost import xgb
+import xgboost as xgb
 from lightgbm import LGBMRegressor
 from sklearn.tree import DecisionTreeRegressor
 
