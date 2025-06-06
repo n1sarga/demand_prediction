@@ -3,8 +3,8 @@
 ## **Acknowledgement**
 This is the final project of the CSE407 (Green Computing) course. 
 This work has been accepted at the International Conference on Data Mining and Information Security 2025 ([ICDMIS2025](http://icdmis.ikrf.in/)). 
-The work was supervised by Prof. [Dr. Ahmed Wasif Reza](https://fse.ewubd.edu/computer-science-engineering/faculty-view/wasif) and conducted by,
-| Name         | Institution                                      |
+The work was supervised by Prof. [Dr. Ahmed Wasif Reza](https://fse.ewubd.edu/computer-science-engineering/faculty-view/wasif), assisted by K. M. Safin Kamal, and conducted by,
+| Name         | Affiliation                                      |
 |--------------------|--------------------------------------------------|
 | Nisarga Mridha (Me)      | East West University |
 | Shah Newaz Parvez Shuvo            | Khulna University of Engineering and Technology        |
