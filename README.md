@@ -38,7 +38,7 @@ The dataset used for this project can be accessed from [Kaggle](https://www.kagg
 | Random Forest              | 98.70    | 9.93   | 8.28  | 0.99 |
 
 ## Best Model Summary
-### 📊 Model Summary
+| Model Summary |
 
 | Metric | Value |
 |---------|-------|
@@ -47,9 +47,7 @@ The dataset used for this project can be accessed from [Kaggle](https://www.kagg
 | **F-statistic (p-value)** | **5.04 × 10⁵ (p < 0.001)** |
 | **Number of observations** | **73,100** |
 
----
-
-### 🔍 Significant Predictors (p < 0.05)
+| Significant Predictors (p < 0.05) |
 
 | Predictor | Coefficient | Std. Error | p-value |
 |------------|--------------|-------------|----------|
