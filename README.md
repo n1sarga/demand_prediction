@@ -21,7 +21,7 @@ The dataset used for this project can be accessed from [Kaggle](https://www.kagg
 ## **Working Procedure**
 <img width="1350" height="1080" alt="Your paragraph text" src="https://github.com/user-attachments/assets/0e5806cd-d723-48bf-a70c-3d8ad2a0bcf5" />
 
-## **Results**
+## Results
 | Model                     | MSE      | RMSE   | MAE   | R²   |
 |----------------------------|----------|--------|-------|------|
 | **Linear Regression**          | **75.03**    | **8.66**   | **7.47**  | **0.99** |
@@ -36,6 +36,27 @@ The dataset used for this project can be accessed from [Kaggle](https://www.kagg
 | Multilayer Perceptron      | 78.29    | 8.84   | 7.58  | 0.99 |
 | Decision Tree              | 210.98   | 14.52  | 11.68 | 0.98 |
 | Random Forest              | 98.70    | 9.93   | 8.28  | 0.99 |
+
+## Best Model Summary
+### 📊 Model Summary
+
+| Metric | Value |
+|---------|-------|
+| **R²** | **0.994** |
+| **Adjusted R²** | **0.994** |
+| **F-statistic (p-value)** | **5.04 × 10⁵ (p < 0.001)** |
+| **Number of observations** | **73,100** |
+
+---
+
+### 🔍 Significant Predictors (p < 0.05)
+
+| Predictor | Coefficient | Std. Error | p-value |
+|------------|--------------|-------------|----------|
+| **Sales** | **108.86** | 0.040 | < 0.001 |
+| **Region (South)** | 0.091 | 0.039 | 0.020 |
+| **Region (West)** | 0.077 | 0.039 | 0.050 |
+| *Inventory* | 0.076 | 0.040 | *0.055 (Marginal)* |
 
 ## Packages Used:
 (Will Be Updated)
