@@ -1,4 +1,4 @@
-<img width="1653" height="993" alt="Radar-Excel" src="https://github.com/user-attachments/assets/eecd220c-6a3d-4cc0-8356-a8490dd4046b" /># **Supply Chain Demand Prediction**
+# **Supply Chain Demand Prediction**
 
 ## **Acknowledgement**
 This is the final project of the CSE407 (Green Computing) course. 
@@ -69,6 +69,3 @@ The dataset used for this project can be accessed from [Kaggle](https://www.kagg
     </td>
   </tr>
 </table>
-
-## Packages Used:
-(Will Be Updated)
