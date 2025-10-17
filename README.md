@@ -39,7 +39,6 @@ The dataset used for this project can be accessed from [Kaggle](https://www.kagg
 
 ## Best Model Summary
 | Model Summary |
-
 | Metric | Value |
 |---------|-------|
 | **R²** | **0.994** |
@@ -48,7 +47,6 @@ The dataset used for this project can be accessed from [Kaggle](https://www.kagg
 | **Number of observations** | **73,100** |
 
 | Significant Predictors (p < 0.05) |
-
 | Predictor | Coefficient | Std. Error | p-value |
 |------------|--------------|-------------|----------|
 | **Sales** | **108.86** | 0.040 | < 0.001 |
