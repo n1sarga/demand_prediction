@@ -22,6 +22,20 @@ The dataset used for this project can be accessed from [Kaggle](https://www.kagg
 <img width="1350" height="1080" alt="Your paragraph text" src="https://github.com/user-attachments/assets/0e5806cd-d723-48bf-a70c-3d8ad2a0bcf5" />
 
 ## **Results**
-(Will Be Updated)
+| Model                     | MSE      | RMSE   | MAE   | R²   |
+|----------------------------|----------|--------|-------|------|
+| **Linear Regression**          | **75.03**    | **8.66**   | **7.47**  | **0.99** |
+| Lasso                      | 141.38   | 11.89  | 9.66  | 0.98 |
+| Ridge                      | 75.04    | 8.66   | 7.47  | 0.99 |
+| ElasticNet                 | 2465.66  | 49.65  | 39.75 | 0.79 |
+| Gradient Boosting Regressor| 112.60   | 10.61  | 8.73  | 0.99 |
+| XGBoost                    | 91.77    | 9.58   | 8.02  | 0.99 |
+| LightGBM                   | 85.20    | 9.23   | 7.83  | 0.99 |
+| Support Vector Regressor   | 349.56   | 18.69  | 13.19 | 0.97 |
+| K-Nearest Neighbors        | 2296.39  | 47.92  | 38.63 | 0.80 |
+| Multilayer Perceptron      | 78.29    | 8.84   | 7.58  | 0.99 |
+| Decision Tree              | 210.98   | 14.52  | 11.68 | 0.98 |
+| Random Forest              | 98.70    | 9.93   | 8.28  | 0.99 |
+
 ## Packages Used:
 (Will Be Updated)
