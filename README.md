@@ -38,26 +38,18 @@ The dataset used for this project can be accessed from [Kaggle](https://www.kagg
 | Random Forest              | 98.70    | 9.93   | 8.28  | 0.99 |
 
 ## Best Model Summary
-| **Model Summary** | 
-|:----------------:|
-|                 |
-
-| Metric | Value |
-|--------|-------|
-| **R²** | **0.994** |
-| **Adjusted R²** | **0.994** |
-| **F-statistic (p-value)** | **5.04 × 10⁵ (p < 0.001)** |
-| **Number of observations** | **73,100** |
-
-| **Significant Predictors (p < 0.05)** |
-|:------------------------------------:|
-|                                      |
-
-| Predictor | Coefficient | Std. Error | p-value |
-|-----------|-------------|-----------|---------|
-| **Sales** | **108.86** | 0.040 | < 0.001 |
-| **Region (South)** | 0.091 | 0.039 | 0.020 |
-| **Region (West)** | 0.077 | 0.039 | 0.050 |
+| **Model Summary** |  |  |  |
+|:----------------:|---|---|---|
+| **Metric** | **Value** |  |  |
+| R² | 0.994 |  |  |
+| Adjusted R² | 0.994 |  |  |
+| F-statistic (p-value) | 5.04 × 10⁵ (p < 0.001) |  |  |
+| Number of observations | 73,100 |  |  |
+| **Significant Predictors (p < 0.05)** |  |  |  |
+| **Predictor** | **Coefficient** | **Std. Error** | **p-value** |
+| Sales | 108.86 | 0.040 | < 0.001 |
+| Region (South) | 0.091 | 0.039 | 0.020 |
+| Region (West) | 0.077 | 0.039 | 0.050 |
 | *Inventory* | 0.076 | 0.040 | *0.055 (Marginal)* |
 
 ## Packages Used:
