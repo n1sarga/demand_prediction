@@ -1,4 +1,4 @@
-# **Supply Chain Demand Prediction**
+<img width="1653" height="993" alt="Radar-Excel" src="https://github.com/user-attachments/assets/eecd220c-6a3d-4cc0-8356-a8490dd4046b" /># **Supply Chain Demand Prediction**
 
 ## **Acknowledgement**
 This is the final project of the CSE407 (Green Computing) course. 
@@ -37,6 +37,8 @@ The dataset used for this project can be accessed from [Kaggle](https://www.kagg
 | Decision Tree              | 210.98   | 14.52  | 11.68 | 0.98 |
 | Random Forest              | 98.70    | 9.93   | 8.28  | 0.99 |
 
+<img width="1653" height="993" alt="Radar-Excel" src="https://github.com/user-attachments/assets/520d61ae-a0df-462f-b740-017f6b9b46ed" />
+
 ## Best Model Summary
 | **Model Summary** |  |  |  |
 |:----------------:|---|---|---|
@@ -51,6 +53,22 @@ The dataset used for this project can be accessed from [Kaggle](https://www.kagg
 | Region (South) | 0.091 | 0.039 | 0.020 |
 | Region (West) | 0.077 | 0.039 | 0.050 |
 | *Inventory* | 0.076 | 0.040 | *0.055 (Marginal)* |
+
+## Learning Curves
+<img width="1589" height="1189" alt="LR" src="https://github.com/user-attachments/assets/a12bc47c-8ce0-4bed-9554-d6f13706a11d" />
+
+## LIME Outputs
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/a3126e20-c037-4ca9-a065-cfe3cc836cf9" width="300" /></td>
+    <td><img src="https://github.com/user-attachments/assets/52a21605-b7f3-4da9-bde5-2bb6fa85f871" width="300" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://github.com/user-attachments/assets/4bb4fc04-1e48-4578-8b8f-194a925b830c" width="300" />
+    </td>
+  </tr>
+</table>
 
 ## Packages Used:
 (Will Be Updated)
