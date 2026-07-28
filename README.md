@@ -18,8 +18,6 @@ The work was supervised by Prof. [Dr. Ahmed Wasif Reza](https://fse.ewubd.edu/co
 
 ## **Dataset**
 The dataset used for this project can be accessed from [Kaggle](https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset).
-## **Working Procedure**
-<img width="1350" height="1080" alt="Your paragraph text" src="https://github.com/user-attachments/assets/0e5806cd-d723-48bf-a70c-3d8ad2a0bcf5" />
 
 ## Results
 | Model                     | MSE      | RMSE   | MAE   | R²   |
